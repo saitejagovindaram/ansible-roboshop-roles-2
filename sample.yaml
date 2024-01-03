@@ -2,12 +2,12 @@
   hosts: localhost
   become: yes
   tasks:
-    - name: Tags
+    - name: Task with Tag dev
       ansible.builtin.debug:
         msg: Hello DEV
       tags:
         - dev
-    - name: Tags
+    - name: Task with Tag qa
       ansible.builtin.debug:
         msg: Hello QA
       tags:
