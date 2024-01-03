@@ -1,0 +1,5 @@
+NamefromlocalVarsDir={{localName}}
+Role={{roleName}}
+msg: I am leaning templates in ansible
+NamefromRootVarsDir={{rootName}}
+

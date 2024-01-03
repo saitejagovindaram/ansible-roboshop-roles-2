@@ -1,0 +1,14 @@
+- name: this will copy demo.cnf from files folder to destination
+  ansible.builtin.copy:
+    src: demo.cnf
+    dest: /tmp
+  tags:
+    - copy
+
+- name: this will copy demo-template.cnf from files by adding dynamic values to it
+  ansible.builtin.template:
+    src: demo-template.cnf
+    dest: /tmp
+  tags:
+    - template
+  
