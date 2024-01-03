@@ -1,0 +1,15 @@
+- name: sample play
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Tags
+      ansible.builtin.debug:
+        msg: Hello DEV
+      tag:
+        - dev
+    - name: Tags
+      ansible.builtin.debug:
+        msg: Hello QA
+      tag:
+        - qa
+      
