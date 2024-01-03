@@ -8,7 +8,7 @@
       tags:
         - dev
       notify: 
-        - dev handler
+        - dev handler # here handler will not be called because state is not changed
 
     - name: Task with Tag qa
       ansible.builtin.debug:
@@ -16,7 +16,7 @@
       tags:
         - qa
       notify:
-        - qa hanlder
+        - qa hanlder  # here handler will not be called because state is not changed
 
   handlers:
     - name: dev handler

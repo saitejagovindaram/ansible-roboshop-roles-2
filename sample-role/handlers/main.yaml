@@ -1,0 +1,8 @@
+handlers:
+  - name: copy handler
+    ansible.builtin.debug:
+      msg: COPY Hanlder is called by task with Tag copy
+  
+  - name: template handler
+    ansible.builtin.debug:
+      msg: TEMPLATE Handler is called by task with Tag template

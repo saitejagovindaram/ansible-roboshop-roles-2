@@ -4,6 +4,8 @@
     dest: /tmp
   tags:
     - copy
+  notify:
+    - copy handler
 
 - name: this will copy demo-template.cnf from files by adding dynamic values to it
   ansible.builtin.template:
@@ -11,4 +13,6 @@
     dest: /tmp/demo-template.cnf
   tags:
     - template
+  notify:
+    - template handler
   
