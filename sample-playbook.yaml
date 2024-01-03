@@ -7,9 +7,23 @@
         msg: Hello DEV
       tags:
         - dev
+      notify: 
+        - dev handler
+
     - name: Task with Tag qa
       ansible.builtin.debug:
         msg: Hello QA
       tags:
         - qa
+      notify:
+        - qa hanlder
+
+  handlers:
+    - name: dev handler
+      ansible.builtin.debug:
+        msg: Dev Hanlder is called by task with Tag DEV
+    
+    - name: qa handler
+      ansible.builtin.debug:
+        msg: QA Handler is called by task with Tag QA
       
