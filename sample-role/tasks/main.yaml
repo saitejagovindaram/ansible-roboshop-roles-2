@@ -9,7 +9,7 @@
 
 - name: this will copy demo-template.cnf from files by adding dynamic values to it
   ansible.builtin.template:
-    src: demo-template.cnf.j2
+    src: demo-template.cnf
     dest: /tmp/demo-template.cnf
   tags:
     - template
