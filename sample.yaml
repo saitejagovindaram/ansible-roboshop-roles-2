@@ -5,11 +5,11 @@
     - name: Tags
       ansible.builtin.debug:
         msg: Hello DEV
-      tag:
+      tags:
         - dev
     - name: Tags
       ansible.builtin.debug:
         msg: Hello QA
-      tag:
+      tags:
         - qa
       
